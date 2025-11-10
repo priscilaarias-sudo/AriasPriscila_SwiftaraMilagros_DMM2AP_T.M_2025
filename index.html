@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arias_y_Swistara_DMM2AP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="imagenes/Sin cara 2.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  
+<nav class="navbar navbar-expand-lg navbar-light ghibli-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#inicio">Chihiro Fest</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#personajes">Personajes</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Historia
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#historia">El Viaje de Chihiro</a></li>
+            <li><a class="dropdown-item" href="#cosplays">Cosplays</a></li>
+            <li><a class="dropdown-item" href="#trailer">Tráiler</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+
+      
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes/Banner-Chihiro.jpg"
+     class="d-block w-100"
+     alt="imagen1"
+     style="height: 65vh; object-fit: cover; object-position: center;">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/Eegy9oPXgAEImZv.jpg_large"
+     class="d-block w-100"
+     alt="imagen1"
+     style="height: 65vh; object-fit: cover; object-position: center;">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/imagen_banner2.webp"
+     class="d-block w-100"
+     alt="imagen1"
+     style="height: 65vh; object-fit: cover; object-position: center;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<section id="personajes">
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+
+      <h2 class="text-center mb-4">Personajes</h2>
+
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="personajes/chihiro.jpg" class="card-img-top" alt="Chihiro">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalChihiro">
+              Chihiro
+            </button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="personajes/haku.webp" class="card-img-top" alt="Haku">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalHaku">
+              Haku
+            </button>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="personajes/sin_cara.jpg" class="card-img-top" alt="Sin Cara">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSinCara">
+              Sin Cara
+            </button>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="personajes/zenibia.webp" class="card-img-top" alt="Yubaba">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalYubaba">
+              Yubaba
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div class="modal fade" id="modalChihiro" tabindex="-1" aria-labelledby="labelChihiro" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="labelChihiro">Sobre Chihiro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Chihiro es una niña de 10 años, la protagonista de esta película que comienza como caprichosa y miedosa, pero se transforma en una persona valiente, trabajadora e independiente al tener que salvar a sus padres en el mundo de los espíritus. A lo largo de la película, lucha contra sus temores, aprende valores como la amistad y la perseverancia, y madura hasta encontrar su verdadera fuerza interior.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modalHaku" tabindex="-1" aria-labelledby="labelHaku" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="labelHaku">Sobre Haku</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Haku es un joven misterioso del mundo espiritual que puede transformarse en un dragón blanco y alado. Inicialmente, se presenta como un sirviente severo y frío de la bruja Yubaba, pero en realidad es un espíritu del río llamado Kohaku, quien está atado a Yubaba y ha perdido su nombre y recuerdos. Es amable y protector con Chihiro, y a través de su ayuda, ella recupera su identidad, y él a su vez puede liberarse de Yubaba.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modalSinCara" tabindex="-1" aria-labelledby="labelSinCara" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="labelSinCara">Sobre Sin Cara</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+         Sin Cara es un espíritu errante con la apariencia de una criatura negra y semitransparente que lleva una máscara blanca. Es un personaje solitario que puede cambiar de forma, asimilando las características de lo que come. Al principio es un ser vacío y adaptable, que se corrompe temporalmente por la avaricia que observa en la casa de baños, pero se calma y vuelve a su forma original al ser acompañado por Chihiro.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modalYubaba" tabindex="-1" aria-labelledby="labelYubaba" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="labelYubaba">Sobre Yubaba</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+       Yubaba es una bruja anciana, dueña de los baños termales en "El viaje de Chihiro", que se caracteriza por su personalidad arrogante, codiciosa y autoritaria, aunque muestra cierta ternura con su hijo Boh. Físicamente, tiene una cabeza y nariz grandes, una mata de pelo gris y arrugas. Es una figura poderosa que roba el nombre de los espíritus para controlar a sus empleados, como hace con Chihiro a quien renombra como "Sen".
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<section id="historia">
+<div class="texto-chihiro">
+  <h2>El Viaje de Chihiro – Un Mundo de Espíritu y Crecimiento</h2>
+  <p>“El viaje de Chihiro” es una de las películas más icónicas de Studio Ghibli. Dirigida por Hayao Miyazaki, cuenta la historia de una niña que se adentra en un mundo espiritual lleno de magia, desafíos y autodescubrimiento.</p>
+  <p>Chihiro, una niña inicialmente temerosa y dependiente, se ve obligada a madurar al enfrentarse a dioses, espíritus y criaturas misteriosas. Su valentía crece con cada obstáculo que supera, simbolizando el paso de la infancia a la madurez.</p>
+  <p>El mundo espiritual representa una metáfora del cambio y la pérdida de identidad. En el baño de los dioses, cada personaje refleja una parte del alma humana: la codicia, la bondad y la pureza.</p>
+  <p>Haku, el espíritu del río, se convierte en guía y símbolo de la conexión con la naturaleza y los recuerdos olvidados. Su vínculo con Chihiro recuerda la importancia de la memoria y el amor desinteresado.</p>
+  <p>Visualmente, la película está llena de colores suaves, luces cálidas y paisajes oníricos que capturan la esencia de lo que significa soñar despierto. Es una obra que trasciende edades y culturas.</p>
+  <p>“El viaje de Chihiro” no es solo una historia de fantasía, sino una reflexión sobre el crecimiento personal, la identidad y la esperanza. Studio Ghibli logra, una vez más, que la magia sea un espejo del alma.</p>
+</div>
+
+</section>
+
+<section id="trailer" class="container text-center my-5 ghibli-trailer">
+  <h2>Tráiler oficial</h2>
+  <div class="ratio ratio-16x9 trailer-video">
+    <iframe 
+      src="https://www.youtube.com/embed/ByXuk9QqQkk" 
+      title="Tráiler de El viaje de Chihiro"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<section id="cosplays">
+<section class="chihiro-fest my-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Cosplays – Chihiro Fest</h2>
+
+    <p class="text-center px-3">
+      La <strong>Chihiro Fest</strong> es un evento anual dedicado al mágico universo de Studio Ghibli, 
+      donde fanáticos de todas las edades se reúnen para rendir homenaje a las películas que marcaron su infancia. 
+      Entre sus actividades más esperadas, el concurso de <em>cosplay</em> destaca por la creatividad y el detalle 
+      con que los participantes recrean a los personajes de <strong>El viaje de Chihiro</strong>.
+    </p>
+
+    <p class="text-center px-3 mb-5">
+      Desde los vestuarios etéreos de Haku hasta las expresivas máscaras del Sin Cara, los asistentes transforman el evento 
+      en un verdadero desfile de fantasía. El ambiente se llena de música, luces suaves y aromas orientales, 
+      recordando el espíritu del baño de los dioses. Cada cosplay no solo celebra una película, 
+      sino también la conexión emocional que Studio Ghibli inspira en quienes creen en la magia cotidiana.
+    </p>
+
+    <div class="row row-col-1 row-col-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="footer/Chihiro- programacion.jpg" class="card-img-top" alt="Cosplay Chihiro">
+          <div class="card-body">
+            <h5 class="card-title">Chihiro</h5>
+            <p class="card-text">Representación de la joven protagonista, con tonos suaves y el clásico uniforme pastel del baño espiritual.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="footer/Hakkuuuu- prograsmacion.jpg" class="card-img-top" alt="Cosplay Haku">
+          <div class="card-body">
+            <h5 class="card-title">Haku</h5>
+            <p class="card-text">Representación del espíritu dragón, con rasgos delicados y una energía serena en tonos celestes y blancos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="footer/sin cara- programacion.jpg" class="card-img-top" alt="Cosplay Sin Cara">
+          <div class="card-body">
+            <h5 class="card-title">Sin Cara</h5>
+            <p class="card-text">Representación minimalista del espíritu enmascarado, con contrastes suaves entre el negro y el violeta.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="footer/yubaba- programacion.jpg" class="card-img-top" alt="Cosplay Yubaba">
+          <div class="card-body">
+            <h5 class="card-title">Yubaba</h5>
+            <p class="card-text">Representación de la poderosa bruja del baño, con detalles dorados y una atmósfera mágica en tonos cálidos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</section>
+
+<section id="contacto">
+
+<section class="container p-3 col-12 col-md-5 ghibli-form mb-5">
+  <div class="text-center p-3">
+    <h2>¿Queres trabajar con nosotros?</h2>
+  </div>
+
+  <form id="contactoForm" action="procesar_formulario.php" method="POST" novalidate>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="nombreInput" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombreInput" name="nombre" placeholder="Tu nombre" required>
+        <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="apellidoInput" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="apellidoInput" name="apellido" placeholder="Tu apellido" required>
+        <div class="invalid-feedback">Por favor, ingresa tu apellido.</div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="emailInput" class="form-label">Email</label>
+      <input type="email" class="form-control" id="emailInput" name="email" placeholder="nombre@ejemplo.com" required>
+      <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="asuntoInput" class="form-label">Asunto</label>
+      <input type="text" class="form-control" id="asuntoInput" name="asunto" placeholder="Asunto del mensaje">
+    </div>
+
+    <div class="mb-3">
+      <label for="mensajeTextarea" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="mensajeTextarea" name="mensaje" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
+    </div>
+
+    <button type="submit" class="btn ghibli-btn w-100">Enviar</button>
+  </form>
+</section>
+
+<script>
+ 
+  (function () {
+    'use strict';
+    const form = document.getElementById('contactoForm');
+
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  })();
+</script>
+
+
+</section>
+
+
+<footer class="text-center text-lg-start">
+  <div class="container p-4">
+
+    <div class="row align-items-center">
+
+  
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase fw-bold">Priscila Arias</h5>
+        <p class="mb-1">Materia: Maquetado y Desarrollo Web</p>
+        <p class="mb-1">Turno: Mañana</p>
+        <p class="mb-1">Comisión: "A"</p>
+
+       
+        <div class="redes-sociales d-flex justify-content-center justify-content-lg-start gap-3 mt-3">
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="footer/instagram.jpg" alt="Instagram" class="icono-red">
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="footer/facebook.jpg" alt="Facebook" class="icono-red">
+          </a>
+          <a href="https://x.com/" target="_blank">
+            <img src="footer/twitter.jpg" alt="Twitter/X" class="icono-red">
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase fw-bold">Milagros Swistara</h5>
+        <p class="mb-1">Comisión: "A"</p>
+        <p class="mb-1">1° Año de cursada</p>
+         <p class="mb-3">Año de cursada: 2025</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.2);">
+    © 2025 — Proyecto académico: <strong>El Viaje de Chihiro</strong>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

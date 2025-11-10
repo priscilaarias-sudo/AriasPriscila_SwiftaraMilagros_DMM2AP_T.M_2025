@@ -1,0 +1,291 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+:root {
+  --ghibli-blue: #7ec8e3;
+  --ghibli-green: #9fd6b3;
+  --ghibli-cream: #f8f3e1;
+  --ghibli-brown: #7b5e57;
+  --ghibli-dark: #2c3e50;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--ghibli-cream);
+  color: var(--ghibli-dark);
+  margin: 0;
+  padding: 0;
+}
+
+
+ 
+  .ghibli-navbar {
+    background-color: var(--ghibli-green) !important;
+  }
+
+  .ghibli-navbar .navbar-brand {
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+
+  .ghibli-navbar .navbar-brand:hover {
+    color: var(--ghibli-brown);
+  }
+
+  .ghibli-navbar .nav-link {
+    color: white !important;
+    font-weight: 500;
+  }
+
+  .ghibli-navbar .nav-link:hover {
+    color: var(--ghibli-brown) !important;
+  }
+
+  .ghibli-navbar .dropdown-menu {
+    background-color: var(--ghibli-green);
+  }
+
+  .ghibli-navbar .dropdown-item {
+    color: white;
+  }
+
+  .ghibli-navbar .dropdown-item:hover {
+    background-color: var(--ghibli-blue);
+    color: white;
+  }
+
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+.carousel-inner img {
+  height: 480px;
+  object-fit: cover;
+  filter: brightness(90%);
+}
+
+
+
+
+
+
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: var(--ghibli-blue);
+  color: white;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
+  font-weight: 600;
+  text-align: center;
+}
+
+
+
+
+
+.texto-chihiro {
+  background-color: var(--ghibli-green);
+  padding: 60px 20px;
+  margin: 60px 0;
+  border-radius: 20px;
+  color: rgb(71, 39, 18)e;
+}
+
+.texto-chihiro h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.texto-chihiro p {
+  max-width: 800px;
+  margin: 15px auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+footer {
+  background: linear-gradient(180deg, var(--ghibli-blue), var(--ghibli-green));
+  color: rgb(71, 39, 18);
+  font-weight: 500;
+}
+
+footer h5 {
+  color: var(--ghibli-brown);
+}
+
+footer a {
+  color: rgb(71, 39, 18);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: var(--ghibli-dark);
+  text-decoration: underline;
+}
+
+/* 🌸 Íconos de redes */
+.icono-red {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease;
+}
+
+
+
+.icono-red:hover {
+  transform: scale(1.1);
+}
+
+footer .row.align-items-center {
+  align-items: flex-start !important;
+}
+
+.chihiro-fest {
+  background-color: var(--ghibli-cream);
+  padding: 60px 0;
+}
+
+.chihiro-fest h2 {
+  color: var(--ghibli-dark);
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.chihiro-fest p {
+  color: var(--ghibli-brown);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.chihiro-fest .card {
+  background-color: var(--ghibli-blue);
+  border: none;
+  border-radius: 15px;
+  color: rgb(71, 39, 18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chihiro-fest .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.ghibli-form {
+  background: linear-gradient(180deg, #a6d8f0 0%, #e3f5ff 100%); /* celeste → casi blanco */
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: var(--ghibli-dark);
+  border: 2px solid rgba(255, 182, 193, 0.3); /* el borde rosado suave */
+}
+
+.ghibli-form h2 {
+  color: var(--ghibli-brown);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ghibli-form label {
+  color: var(--ghibli-dark);
+  font-weight: 600;
+}
+
+.ghibli-form .btn {
+  background-color: var(--ghibli-green);
+  border: none;
+  transition: 0.3s;
+}
+
+.ghibli-form .btn:hover {
+  background-color: var(--ghibli-blue);
+}
+
+.ghibli-btn {
+  background-color: var(--ghibli-green);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.ghibli-btn:hover {
+  background-color: var(--ghibli-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.ghibli-trailer {
+  background: linear-gradient(180deg, #e3f5ff 0%, #cdeefc 100%);
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(173, 216, 230, 0.5);
+  color: var(--ghibli-dark);
+}
+
+.ghibli-trailer h2 {
+  color: var(--ghibli-brown);
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+}
+
+.trailer-video {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 3px solid rgba(255, 182, 193, 0.4); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trailer-video:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 40vh !important;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .ghibli-navbar .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+
+
